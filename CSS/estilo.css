@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+    /*BARRA DE NAVEGACION*/
+
+
+
+.header{
+    background-color: black;
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.nav{
+    display: block;
+   
+}
+.nav__lista{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.nav__item{
+    margin-left: 1rem;
+    color: white;
+}
+
+.header__icono{
+    font-size: 2rem;
+    color:white;
+    text-decoration: none;
+    display: none;
+    
+}
+
+    
+.nav__logo{
+   
+    height: 50px;
+    align-items: center;
+}
+
+.nav:hover{
+    color: white;
+}
+
+.main{
+    margin-top: 80px;
+    min-height: 100vh;
+
+}
+
+/*PAGINA PRINCIPAL*/
+.inicio{
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(../imagenes/tostadora.jpg);
+    background-size: cover;
+    
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+    
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.contenedor{
+    grid-column: 4/9 ;
+    grid-row: 2/7;
+    text-align: center;
+}
+.contenedor__titulo{
+   text-align: center;
+   font-size: 3rem;
+   color: goldenrod;
+  
+}
+.contenedor__h2{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+
+.contenedor__parrafo{
+    color: white;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.contenedor__boton{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    background:none;
+    color: white;
+    border: 1px solid goldenrod;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.contenedor__boton:hover{
+    background-color: goldenrod;
+}
+
+
+
+
+/* BOTON DE WHATSAPP*/
+ .whathsapp{
+    background-color: green;
+    color: white;
+    width: 100px;
+    padding:0.5rem 1rem;
+    text-align: center;
+    position: fixed;
+    right: 2rem ;
+    bottom:2rem ;
+}
+
+/* FOOTER */
+.footer{
+    background-color:black ;
+    color: white;
+    padding: 2rem 1rem;
+
+    
+}
+.footer__flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__lista{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    border-top: 3px solid white;
+    padding: 1rem 0;
+    gap: 1rem;
+    
+    
+}
+.nav__item--oculto{
+    display: none;
+}
+
+
+/* Aca empieza la Pagina Sobre Mi"*/
+.inicio3{
+    display: flex;
+    flex-direction: row;
+    padding: 0, 1rem;
+    background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(203,215,73,1) 37%, rgba(164,164,164,1) 100%);;
+
+}
+.inicio3__izq{
+    width: 50%;
+
+}
+.inicio3__der{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+.inicio3__titulo{
+    font-size: 40px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.inicio3__parrafo{
+    font-size: 20px;
+    margin: 1rem;
+    line-height: 1.5;
+
+
+}
+.inicio3__img{
+    width: 600px;
+    height: 400px;
+    margin-bottom: 1rem;
+
+}
+
+
+
+
+.inicio4{
+    display: flex;
+    flex-direction: row;
+    padding: 0, 1rem;
+    background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(203,215,73,1) 37%, rgba(164,164,164,1) 100%);
+
+}
+.inicio4__izq{
+    width: 50%;
+
+}
+.inicio4__der{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+.inicio4__titulo{
+    font-size: 40px;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+
+.inicio4__parrafo{
+    font-size: 20px;
+    margin: 1rem;
+    line-height: 1.5;
+
+}
+.inicio4__video{
+    width: 600px;
+    height: 400px;
+    margin-bottom: 1rem;
+   
+
+}
+
+
+    
+
+
+/*Diseños*/
+.propiedades-diseño{
+    color:black ;
+    text-align: center;
+    background-color:rgb(228, 222, 215);
+
+    
+}
+
+.galeria-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    grid-auto-rows: 400px;
+    padding: 20px;
+    gap: 10px;
+}
+.galeria__img{
+    width: 100%;
+    height:100% ;
+    object-fit: cover;
+    
+}
+.galeria__item{
+    position: relative;
+}
+.galeria__titulo{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    background-color: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1)) ;
+    width: 100%;
+}
+.galeria__item:nth-child(){
+    grid-column-start: span 2 ;
+}
+
+
+/*Srvicios*/
+.servicios{
+    background-color: rgb(249, 243, 243);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.servicios__caja{
+    width: auto;
+    height: 400px;
+    background-color:rgb(0, 0, 0);
+    display: inline-block;
+   
+    color: white;
+    
+    
+    
+}
+.servicios__titulo{
+    font-size: 25px;
+    text-align: center;
+
+
+}
+.servicios__parrafo{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+
+
+
+
+
+
+
+/*CONTACTO*/
+
+.propiedades-form{
+    background-size: 100%;
+    background-image: url(../imagenes/tostadora2.jpg);
+    background-attachment: fixed;
+    text-align: center;
+}
+.form{
+    background:rgba(0, 0, 0, 0.5);
+    width: 450px;
+    margin:auto;
+    padding: 30px 30px;
+    box-sizing: border-box;
+   
+    margin-bottom: 20px;
+    border-radius: 7px;
+     
+}
+.form__input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+}
+.form__submit{
+    font-family:'Comfortaa', cursive;
+    background-color: yellow;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    
+}
+.form__title{
+color: white;
+text-align: center;
+font-size: 30px;
+margin: auto;
+margin-bottom: 20px;
+
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+
+.contacto__direccion{
+   font-size: 30px;
+   text-align: center;
+   color: white;
+
+}
+.contacto__iframe{
+    width:500px ;
+    height: 300px;
+    padding: 20px;
+    
+}
+.contenedor{
+    display: inline-block;
+}
+
+.header__logo{
+    
+}
+
+/*Medias Querys*/
+
+
+@media screen and (max-width:599px){
+    .nav{
+        display: none;
+        position: fixed;
+        z-index: 100000;
+        top: 0;
+        left: 0;
+        background-color: blueviolet;
+        width: 80%;
+        height: 100vh;
+        
+        
+    }
+    .nav__lista{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        gap: 1rem;
+        color: white;
+
+    }
+    .header__icono{
+        display: block;
+    }
+    .nav:target{
+        display: block;
+
+    }
+    .nav__item--oculto{
+        display: block;
+    }
+
+
+
+
+    /* Pagina Pricipal*/
+.contenedor{
+    text-align: start;
+    grid-column: 2/9 ;
+    grid-row:1/6 ;
+    
+}
+.contenedor__titulo{
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+
+
+
+
+/* Sobre mi */
+.inicio3{
+    flex-direction: column;
+}
+.inicio3__izq{
+    width: 100%;
+
+}
+.inicio3__der{
+    width: 100%;
+}
+.inicio3__titulo{
+    font-size: 30px;
+}
+.inicio3__parrafo{
+    font-size: 15px;
+}
+
+.inicio4{
+    flex-direction: column;
+}
+.inicio4__izq{
+    width: 100%;
+
+}
+.inicio4__der{
+    width: 100%;
+}
+.inicio4__titulo{
+    font-size: 30px;
+}
+.inicio4__parrafo{
+    font-size: 15px;
+}
+
+
+
+/*Galeria Diseños*/
+.galeria-contenedor{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+
+}
+
+
+
+
+
+/* Servicios */
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Contacto */
+.form{
+    width: 100%;
+}
+.contacto__iframe{
+    width:300px ;
+    height: 250px;
+    padding: 20px;
+    
+}
+.servicios__titulo{
+    font-size: 20px;
+    text-align: center;
+
+
+}
+.servicios__parrafo{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
