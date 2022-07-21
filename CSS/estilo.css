@@ -70,6 +70,10 @@ body{
     min-height: 100vh;
 
 }
+.nav__item--oculto{
+    display: none;
+}
+
 
 /*PAGINA PRINCIPAL*/
 .inicio{
@@ -161,10 +165,12 @@ body{
     
     
 }
-.nav__item--oculto{
-    display: none;
-}
 
+
+.footer__item{
+   font-size: 2rem;
+   color: white;
+}
 
 /* Aca empieza la Pagina Sobre Mi"*/
 .inicio3{
@@ -392,6 +398,7 @@ textarea{
 }
 
 .header__logo{
+   
     
 }
 
