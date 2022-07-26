@@ -15,19 +15,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
-    <title>Sobre Mi</title>
+<!--Vincular Bootstrap CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<title>Sobre Mi</title>
+
 </head>
 <body>
     <header class="header">
 
-        <a href="../index.html"><img src="" alt="logo DG" width="100" height="100"></a>
+        <a href="../index.html"><img src="../imagenes/logo2.png" alt="logo DG" width="100" height="100"></a>
         
-        <a href="#" class="header__icono">
+        <a href="#abierto" class="header__icono">
              <span class="jam jam-menu" ></span>
             </a>
        
 
-    <nav class="nav">
+    <nav class="nav" id="abierto">
         <ul class="nav__lista">
          <li class="nav__item">
             <a href="../index.html">Inicio</a>
@@ -46,34 +50,47 @@
          <li class="nav__item">
             <a href="./contacto.html" >Contacto</a>
          </li>
+         <li class="nav__item nav__item--oculto" >
+            <a href="Cerrar">❌</a>
+         </li>
         </ul>
         </nav>
      </header>
        
         <main class="main">
-            <section class="inicio3">
-                <div class="inicio3__izq">
-                    <h2 class="inicio3__titulo">DAVID A. GARCIA</h2>
-                    <p class="inicio3__parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia commodi minus iusto delectus deserunt et corrupti dolore quia nihil necessitatibus tempore quidem quam eius autem nemo quae vitae molestias, obcaecati sequi ad asperiores quos! Aperiam eligendi eaque nihil vel, quisquam distinctio necessitatibus id accusamus ut cum sequi error obcaecati blanditiis. Non voluptate harum laboriosam sequi ea placeat totam perferendis culpa!</p>
-    
+ 
+            <section class="bootstrap2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h2>DAVID GARCIA</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta dignissimos assumenda explicabo adipisci itaque nihil rem tempora quam alias dolorum quas, similique autem velit consequatur sequi error laudantium et nemo!</p>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="bootstrap2__img" src="../imagenes/diseñador.jpg" alt="" width="100" height="100">
+                        </div>
+                    </div>
                 </div>
-                <div class="inicio3__der">
-                    <img class="inicio3__img" src="../imagenes/diseñador.jpg" alt="" width="100" height="100">
-    
-                </div>
-    
             </section>
-            <section class="inicio4">
-                <div class="inicio4__izq">
-                    <h2 class="inicio4__titulo">¿QUÉ ES DISEÑO 3D?</h2>
-                    <p class="inicio4__parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia commodi minus iusto delectus deserunt et corrupti dolore quia nihil necessitatibus tempore quidem quam eius autem nemo quae vitae molestias, obcaecati sequi ad asperiores quos! Aperiam eligendi eaque nihil vel, quisquam distinctio necessitatibus id accusamus ut cum sequi error obcaecati blanditiis. Non voluptate harum laboriosam sequi ea placeat totam perferendis culpa!</p>
-    
+            <section class="bootstrap3">
+                <div class="container">
+                    <div class="row">
+                
+                <div class="col-12 col-md-6">
+                    <h2>QUE ES EL DISEÑO 3D</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ratione possimus, aliquam officia voluptates maiores numquam! Fugit assumenda laboriosam iusto animi, quidem voluptate eaque ducimus illo laudantium est architecto sapiente!
+
                 </div>
-                <div class="inicio4__der">
-                    <iframe  class="inicio4__video" width="100" height="100" src="https://www.youtube.com/embed/aGp8iz3k2FE" title="Microaprendizaje: ¿Qué es el diseño 3D?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-12 col-md-6">
+                    <iframe  class="bootstrap2__video" width="300" height="300px" src="https://www.youtube.com/embed/aGp8iz3k2FE" title="Microaprendizaje: ¿Qué es el diseño 3D?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-     
+              </div>
+            </div>
             </section>
+
+
+        
 
                
                 <div>
@@ -102,5 +119,8 @@
                     </ul>
                     </nav>
                  </footer>
+    <!--Vinculando Bootstrap JavaScript-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>

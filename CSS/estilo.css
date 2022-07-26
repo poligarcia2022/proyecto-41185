@@ -39,6 +39,8 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 0;
+    margin-bottom: 0 ;
 
 }
 .nav__item{
@@ -66,7 +68,7 @@ body{
 }
 
 .main{
-    margin-top: 80px;
+    margin-top: 150px;
     min-height: 100vh;
 
 }
@@ -125,6 +127,20 @@ body{
     background-color: goldenrod;
 }
 
+/*bootstrap*/
+.presentacion{
+    margin: 2rem 0;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 1rem 0;
+    margin: 1rem 0;
+
+}
+.presentacion__img{
+    width:100% ;
+    height: auto;
+    object-fit: cover;
+}
 
 
 
@@ -171,6 +187,9 @@ body{
    font-size: 2rem;
    color: white;
 }
+.footer__titulo{
+font-size: 1rem;
+}
 
 /* Aca empieza la Pagina Sobre Mi"*/
 .inicio3{
@@ -204,8 +223,9 @@ body{
 
 }
 .inicio3__img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     margin-bottom: 1rem;
 
 }
@@ -307,24 +327,30 @@ body{
     height: 400px;
     background-color:rgb(0, 0, 0);
     display: inline-block;
-   
-    color: white;
-    
-    
-    
+   color: white;
 }
-.servicios__titulo{
+
+.bootstrapServicios{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 1rem 0;
+    margin: 1rem 0;
+    color: white;
+}
+.bootstrapServicios__titulo{
     font-size: 25px;
     text-align: center;
+    font-weight: 600;
 
 
 }
-.servicios__parrafo{
+.bootstrapServicios__parrafo{
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
 
 }
+
 
 
 
@@ -397,10 +423,36 @@ textarea{
     display: inline-block;
 }
 
-.header__logo{
-   
+
+/* Boostrap*/
+.container{
     
 }
+.btn-primary{
+    background-color: black;
+    border-color: black;
+}
+
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.bootstrap2__img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    
+}
+.bootstrap2__video{
+    width: 100%;
+    object-fit: cover;
+    padding-top: 1rem;
+    height: 400px;
+   
+}
+
 
 /*Medias Querys*/
 
@@ -412,9 +464,9 @@ textarea{
         z-index: 100000;
         top: 0;
         left: 0;
-        background-color: blueviolet;
+        background-color:rgb(84, 84, 84);
         width: 80%;
-        height: 100vh;
+        height: 50vh;
         
         
     }
