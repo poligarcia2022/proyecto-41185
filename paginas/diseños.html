@@ -60,11 +60,17 @@
             <section>
                 <div class="galeria-contenedor">
                     <div class="galeria__item">
-                        <img src="../imagenes/control.jpg" alt="" class="galeria__img">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+                          <img src="../imagenes/control.jpg" alt="" class="galeria__img">  
+                        </a>
+                        
                         <h2 class="galeria__titulo">Imagen 1</h2>
                     </div>
                     <div class="galeria__item">
-                        <img src="../imagenes/cuchillos.jpg" alt="" class="galeria__img">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+                            <img src="../imagenes/cuchillos.jpg" alt="" class="galeria__img">
+                        </a>
+                        
                         <h2 class="galeria__titulo">Titulo</h2>
                     </div>
                     <div class="galeria__item">
@@ -83,14 +89,29 @@
                         <img src="../imagenes/tostadora2.jpg" alt="" class="galeria__img">
                         <h2 class="galeria__titulo">Titulo
                     </div>
-          
-        
-        
                 </div>
-             
-                
-        
-            </section>
+             </section>
+              <!-- Galeria con modal -->
+              <!-- Imagen 1 -->
+            
+              <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="../imagenes/control.jpg" alt="">
+                    </div>
+                </div>
+              </div>
+              <!-- Imagen 2 -->
+              <div tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true" class="modal fade" id="modalImage2">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="../imagenes/cuchillos.jpg" alt="">
+                    </div>
+                </div>
+              </div>
+
+
+
 
             <div>
                 <a class="whathsapp" href="">Whatsapp</a>
