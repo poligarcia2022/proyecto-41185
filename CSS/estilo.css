@@ -10,71 +10,12 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
+.main{
+    margin-top: 50px;
+    min-height: 100vh;}
 
 
     /*BARRA DE NAVEGACION*/
-
-
-
-.header{
-    background-color: black;
-    position: fixed;
-    top:0 ;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-.nav{
-    display: block;
-   
-}
-.nav__lista{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 0;
-    margin-bottom: 0 ;
-
-}
-.nav__item{
-    margin-left: 1rem;
-    color: white;
-}
-
-.header__icono{
-    font-size: 2rem;
-    color:white;
-    text-decoration: none;
-    display: none;
-    
-}
-
-    
-.nav__logo{
-   
-    height: 50px;
-    align-items: center;
-}
-
-.nav:hover{
-    color: white;
-}
-
-.main{
-    margin-top: 150px;
-    min-height: 100vh;
-
-}
-.nav__item--oculto{
-    display: none;
-}
 
 
 /*PAGINA PRINCIPAL*/
@@ -93,7 +34,7 @@ body{
 
 }
 .contenedor{
-    grid-column: 4/9 ;
+    grid-column: 3/10 ;
     grid-row: 2/7;
     text-align: center;
 }
@@ -101,11 +42,13 @@ body{
    text-align: center;
    font-size: 3rem;
    color: goldenrod;
+   font-family: 'Rubik Mono One', sans-serif;
   
 }
 .contenedor__h2{
     font-size: 2rem;
     margin-top: 10px;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 
@@ -142,6 +85,27 @@ body{
     object-fit: cover;
 }
 
+
+/* ANIMISTA Animation*/
+.tracking-in-expand {
+animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
 
 
 /* BOTON DE WHATSAPP*/
@@ -192,90 +156,33 @@ font-size: 1rem;
 }
 
 /* Aca empieza la Pagina Sobre Mi"*/
-.inicio3{
-    display: flex;
-    flex-direction: row;
-    padding: 0, 1rem;
-    background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(203,215,73,1) 37%, rgba(164,164,164,1) 100%);;
-
+.bootstrap2{
+    padding-top: 20px;
 }
-.inicio3__izq{
-    width: 50%;
-
-}
-.inicio3__der{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-
-}
-.inicio3__titulo{
-    font-size: 40px;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.inicio3__parrafo{
-    font-size: 20px;
-    margin: 1rem;
-    line-height: 1.5;
-
-
-}
-.inicio3__img{
+.bootstrap2__img{
     width: 100%;
-    height: auto;
+    height:auto;
     object-fit: cover;
-    margin-bottom: 1rem;
-
-}
-
-
-
-
-.inicio4{
-    display: flex;
-    flex-direction: row;
-    padding: 0, 1rem;
-    background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(203,215,73,1) 37%, rgba(164,164,164,1) 100%);
-
-}
-.inicio4__izq{
-    width: 50%;
-
-}
-.inicio4__der{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-
-}
-.inicio4__titulo{
-    font-size: 40px;
-    margin-bottom: 2rem;
-    text-align: center;
     
 }
-
-.inicio4__parrafo{
-    font-size: 20px;
-    margin: 1rem;
-    line-height: 1.5;
-
-}
-.inicio4__video{
-    width: 600px;
+.bootstrap2__video{
+    width: 100%;
+    object-fit: cover;
+    padding-top: 1rem;
     height: 400px;
-    margin-bottom: 1rem;
    
-
 }
+
 
 
     
 
 
 /*Diseños*/
+
+.galeriaContenedor{
+    padding:auto;
+}
 .propiedades-diseño{
     color:black ;
     text-align: center;
@@ -333,28 +240,37 @@ font-size: 1rem;
 }
 
 .bootstrapServicios{
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   background-color: black;
     padding: 1rem 0;
     margin: 1rem 0;
     color: white;
 }
 .bootstrapServicios__titulo{
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-weight: 600;
+    color: goldenrod;
 
 
 }
 .bootstrapServicios__parrafo{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     padding-top: 10px;
 
 }
 
+.icon{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
 
-
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
 
 
 
@@ -365,7 +281,7 @@ font-size: 1rem;
 
 .propiedades-form{
     background-size: 100%;
-    background-image: url(../imagenes/tostadora2.jpg);
+ background-image: url(../imagenes/tostadora2.jpg); 
     background-attachment: fixed;
     text-align: center;
 }
@@ -375,7 +291,7 @@ font-size: 1rem;
     margin:auto;
     padding: 30px 30px;
     box-sizing: border-box;
-   
+
     margin-bottom: 20px;
     border-radius: 7px;
      
@@ -421,39 +337,15 @@ textarea{
     padding: 20px;
     
 }
+.btn-primary{
+    background-color: black;
+    border-color: black;
+}
 .contenedor{
     display: inline-block;
 }
 
 
-/* Boostrap*/
-.container{
-    
-}
-.btn-primary{
-    background-color: black;
-    border-color: black;
-}
-
-.carousel-item img{
-    height: 500px;
-    object-fit: cover;
-}
-
-
-.bootstrap2__img{
-    width: 100%;
-    height:auto;
-    object-fit: cover;
-    
-}
-.bootstrap2__video{
-    width: 100%;
-    object-fit: cover;
-    padding-top: 1rem;
-    height: 400px;
-   
-}
 
 
 /*Medias Querys*/

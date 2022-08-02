@@ -4,91 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/estilo.css">
-    <link rel="icon" href="./imagenes/logoDG.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <!-- Vinculacion Animate Efectos o animaciones -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+<link rel="icon" href="./imagenes/logoDG.png">
+
+
+<!-- Vinculacion Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+<!-- Vinculacion de galeria de iconos tipograficos Jam Icons -->
 <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 
 <!--Vincular Bootstrap CSS-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- Vinculacion CSS -->
+<link rel="stylesheet" href="./CSS/estilo.css">
 
     <title>Dave Garcia Diseño 3D</title>
 </head>
 <body>
     
-    <header class="header">
+    <header class="header fixed-top header-scrolled">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">DAVID GARCIA </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/diseños.html">Diseños 3D</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/sobre-mi.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/servicios.html">Servicios</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/"><span class="jam jam-facebook"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/"><span class="jam jam-instagram"></span></a>
+                  </li>
+                </ul>
 
-        <a class="header__logo" href="index.html"><img src="./imagenes/logo2.png" alt="logo DG" width="100" height="100" ></a>
+              </div>
+            </div>
+          </nav>
 
-        
-        <a href="#abierto" class="header__icono">
-             <span class="jam jam-menu" ></span>
-            </a>
-       
-
-    <nav class="nav" id="abierto">
-        <ul class="nav__lista">
-         <li class="nav__item">
-            <a href="index.html">Inicio</a>
-         </li>
-           
-         <li class="nav__item">
-            <a href="./paginas/sobre-mi.html" >Sobre Mi</a>
-         </li>
-           
-         <li class="nav__item">
-            <a href="./paginas/diseños.html" >Diseños 3D</a>
-         </li>
-         <li class="nav__item">
-            <a href="./paginas/servicios.html" >Servicios</a>
-         </li>
-         <li class="nav__item">
-            <a href="./paginas/contacto.html" >Contacto</a>
-         </li>
-         <li class="nav__item nav__item--oculto" >
-            <a href="Cerrar">❌</a>
-         </li>
-        </ul>
-        </nav>
      </header>
 
         <!-- Va a contener todos los elementos section que vaya a plasmar en este pagina -->
     <main class="main">
         <section class="inicio">
-            <div class="contenedor">
+            <div class="contenedor tracking-in-expand">
                 <h1 class="contenedor__titulo">Estudio David Garcia</h1>
-                <h3 class="contenedor__h3">Diseño y Animación 3D</h3>
+                <h3 class="contenedor__h3" >Diseño y Animación 3D</h3>
                 <h2 class="contenedor__h2">Hacemos tu idea realidad<h2>
                 <!--<button class="contenedor__boton">Galeria</button>-->
                 <button type="button" class="btn btn-warning">Galeria</button>
      
             </div>
-        </section>
-        <section class="presentacion">
-            <div class=" container">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <h2 class="presentacion__titulo">Titulo</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur exercitationem dolore impedit harum voluptate omnis veniam minima debitis pariatur. Et, eos rem odit delectus suscipit recusandae doloremque quasi at!</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, ad cupiditate nisi illo ipsa quos labore numquam itaque molestiae modi recusandae sequi porro possimus odit id natus earum cumque obcaecati?</p>
-                        <button type="button" class="btn btn-warning">Contacto</button>
 
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img class="presentacion__img" src="./imagenes/nintendo.jpg" width="100" height="100" alt="">
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
 
     </main>
 
@@ -99,7 +96,6 @@
     <footer class="footer">
         <div class="footer__flex">
          <h4 class="footer__titulo">2022- Derechos Reservados-Dave Garcia 3D<h4>
-         <img src="./imagenes/logo2.png" alt="logo DG" width="100" height="100">
         </div>
         
         <nav>
