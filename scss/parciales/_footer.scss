@@ -4,15 +4,13 @@
     color: white;
     padding: 2rem 1rem;
 
-    
-}
-.footer__flex{
+    &__flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.footer__lista{
+&__lista{
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -20,15 +18,17 @@
     border-top: 3px solid white;
     padding: 1rem 0;
     gap: 1rem;
-    
-    
+       
 }
-
-
-.footer__item{
+&__item{
    font-size: 2rem;
    color: white;
 }
-.footer__titulo{
+&__titulo{
 font-size: 1rem;
+
 }
+}
+
+
+

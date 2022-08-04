@@ -21,7 +21,7 @@
 .contenedor__titulo{
    text-align: center;
    font-size: 3rem;
-   color: goldenrod;
+   color: $colorPrincipal;
    font-family: 'Rubik Mono One', sans-serif;
   
 }
@@ -42,12 +42,12 @@
     padding: 10px 15px;
     background:none;
     color: white;
-    border: 1px solid goldenrod;
+    border: 1px solid $colorPrincipal;
     border-radius: 30px;
     margin-top: 10px;
 }
 .contenedor__boton:hover{
-    background-color: goldenrod;
+    background-color: $colorPrincipal;
 }
 
 /*bootstrap*/
