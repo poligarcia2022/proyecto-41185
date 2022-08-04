@@ -1,0 +1,47 @@
+/*Srvicios*/
+.servicios{
+    background-color: rgb(249, 243, 243);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.servicios__caja{
+    width: auto;
+    height: 400px;
+    background-color:rgb(0, 0, 0);
+    display: inline-block;
+   color: white;
+}
+
+.bootstrapServicios{
+   background-color: black;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    color: white;
+}
+.bootstrapServicios__titulo{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: goldenrod;
+
+
+}
+.bootstrapServicios__parrafo{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.icon{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}

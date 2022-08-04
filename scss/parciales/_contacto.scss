@@ -1,0 +1,67 @@
+/*CONTACTO*/
+
+.propiedades-form{
+    background-size: 100%;
+ background-image: url(../imagenes/tostadora2.jpg); 
+    background-attachment: fixed;
+    text-align: center;
+}
+.form{
+    background:rgba(0, 0, 0, 0.5);
+    width: 450px;
+    margin:auto;
+    padding: 30px 30px;
+    box-sizing: border-box;
+
+    margin-bottom: 20px;
+    border-radius: 7px;
+     
+}
+.form__input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+}
+.form__submit{
+    font-family:'Comfortaa', cursive;
+    background-color: yellow;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    
+}
+.form__title{
+color: white;
+text-align: center;
+font-size: 30px;
+margin: auto;
+margin-bottom: 20px;
+
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+
+.contacto__direccion{
+   font-size: 30px;
+   text-align: center;
+   color: white;
+
+}
+.contacto__iframe{
+    width:500px ;
+    height: 300px;
+    padding: 20px;
+    
+}
+.btn-primary{
+    background-color: black;
+    border-color: black;
+}
+.contenedor{
+    display: inline-block;
+}

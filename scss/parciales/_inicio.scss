@@ -1,0 +1,84 @@
+/*PAGINA PRINCIPAL*/
+.inicio{
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(../imagenes/tostadora.jpg);
+    background-size: cover;
+    
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+    
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.contenedor{
+    grid-column: 3/10 ;
+    grid-row: 2/7;
+    text-align: center;
+}
+.contenedor__titulo{
+   text-align: center;
+   font-size: 3rem;
+   color: goldenrod;
+   font-family: 'Rubik Mono One', sans-serif;
+  
+}
+.contenedor__h2{
+    font-size: 2rem;
+    margin-top: 10px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+.contenedor__parrafo{
+    color: white;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.contenedor__boton{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    background:none;
+    color: white;
+    border: 1px solid goldenrod;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.contenedor__boton:hover{
+    background-color: goldenrod;
+}
+
+/*bootstrap*/
+.presentacion{
+    margin: 2rem 0;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 1rem 0;
+    margin: 1rem 0;
+
+}
+.presentacion__img{
+    width:100% ;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* ANIMISTA Animation*/
+.tracking-in-expand {
+animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
