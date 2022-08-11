@@ -2,7 +2,7 @@
 
 .propiedades-form{
     background-size: 100%;
- background-image: url(../imagenes/tostadora2.jpg); 
+background-image: url(../imagenes/tostadora2.jpg); 
     background-attachment: fixed;
     text-align: center;
 }
@@ -25,7 +25,7 @@
 }
 .form__submit{
     font-family:'Comfortaa', cursive;
-    background-color: yellow;
+    background-color:$colorPrincipal;
     padding: 10px;
     cursor: pointer;
     border-radius: 7px;
@@ -52,12 +52,7 @@ textarea{
    color: white;
 
 }
-.contacto__iframe{
-    width:500px ;
-    height: 300px;
-    padding: 20px;
-    
-}
+
 .btn-primary{
     background-color: black;
     border-color: black;

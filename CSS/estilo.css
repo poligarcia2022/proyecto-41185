@@ -9,6 +9,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-image: url(../imagenes/Curve-Line3.svg);
 }
 
 .main {
@@ -101,21 +102,6 @@ body {
   background-color: goldenrod;
 }
 
-/*bootstrap*/
-.presentacion {
-  margin: 2rem 0;
-  background: #833ab4;
-  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
-  padding: 1rem 0;
-  margin: 1rem 0;
-}
-
-.presentacion__img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 /* ANIMISTA Animation*/
 .tracking-in-expand {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -136,63 +122,112 @@ body {
 
 /* Aca empieza la Pagina Sobre Mi"*/
 .bootstrap2 {
-  padding-top: 20px;
+  background-color: goldenrod;
+  padding-top: 2rem;
+}
+
+.bootstrap2__titulo {
+  font-size: 25px;
 }
 
 .bootstrap2__img {
-  width: 100%;
-  height: auto;
   object-fit: cover;
-}
-
-.bootstrap2__video {
   width: 100%;
-  object-fit: cover;
-  padding-top: 1rem;
   height: 400px;
+  margin-bottom: 3rem;
 }
 
-/*Diseños*/
-.galeriaContenedor {
-  padding: auto;
+.bootstrap3 {
+  padding-top: 2rem;
 }
 
-.propiedades-diseño {
-  color: black;
+.bootstrap3__titulo {
   text-align: center;
-  background-color: #e4ded7;
 }
 
-.galeria-contenedor {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 400px;
-  padding: 20px;
-  gap: 10px;
+.contenedor-cuadrados {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.galeria__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.galeria__item {
-  position: relative;
-}
-
-.galeria__titulo {
-  position: absolute;
-  bottom: 0;
-  color: white;
-  margin: 0;
+.cuadrado-1 {
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin: 20px;
   padding: 10px;
-  background-color: linear-gradient(rgba(255, 255, 255, 0), black);
-  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: goldenrod;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 10px;
 }
 
-.galeria__item:nth-child() {
-  grid-column-start: span 2;
+.cuadrado-2 {
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: goldenrod;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 10px;
+}
+
+.cuadrado-3 {
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: goldenrod;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 10px;
+}
+
+.cuadrado-4 {
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: goldenrod;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 10px;
+}
+
+.cuadrado-5 {
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: goldenrod;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 10px;
+}
+
+.cuadrado-6 {
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: goldenrod;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 10px;
 }
 
 /*Srvicios*/
@@ -239,8 +274,56 @@ body {
 }
 
 .carousel-item img {
-  height: 500px;
   object-fit: cover;
+}
+
+/*Diseños*/
+.galeriaContenedor {
+  padding: auto;
+}
+
+.propiedades-diseño {
+  color: black;
+  text-align: center;
+  background-color: #e4ded7;
+}
+
+.galeria-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  padding: 40px;
+  gap: 40px;
+}
+
+.galeria__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 300ms;
+  position: relative;
+}
+
+.galeria__img:hover {
+  transform: scale(1.15);
+}
+
+.galeria__item {
+  position: relative;
+}
+
+.galeria__titulo {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  background-color: linear-gradient(rgba(255, 255, 255, 0), black);
+  width: 100%;
+}
+
+.galeria__item:nth-child() {
+  grid-column-start: span 2;
 }
 
 /*CONTACTO*/
@@ -270,7 +353,7 @@ body {
 
 .form__submit {
   font-family: 'Comfortaa', cursive;
-  background-color: yellow;
+  background-color: goldenrod;
   padding: 10px;
   cursor: pointer;
   border-radius: 7px;
@@ -294,12 +377,6 @@ textarea {
   font-size: 30px;
   text-align: center;
   color: white;
-}
-
-.contacto__iframe {
-  width: 500px;
-  height: 300px;
-  padding: 20px;
 }
 
 .btn-primary {
