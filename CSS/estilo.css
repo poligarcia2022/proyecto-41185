@@ -327,65 +327,116 @@ body {
 }
 
 /*CONTACTO*/
-.propiedades-form {
-  background-size: 100%;
-  background-image: url(../imagenes/tostadora2.jpg);
-  background-attachment: fixed;
+.contenedorContacto {
+  width: 90%;
+  max-width: 1000px;
+  background: #fff;
+  padding: 40px;
+  margin: 20px auto;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contenedorContacto h1 {
+  font-family: 30px;
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 25px;
+  color: goldenrod;
+  flex-direction: row;
 }
 
-.form {
-  background: rgba(0, 0, 0, 0.5);
-  width: 450px;
-  margin: auto;
-  padding: 30px 30px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  border-radius: 7px;
-}
-
-.form__input {
+.contenido {
+  display: flex;
   width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  font-size: 17px;
+  overflow: hidden;
+  flex-direction: row;
 }
 
-.form__submit {
-  font-family: 'Comfortaa', cursive;
+.contenido .info
+.contenido .formulario {
+  width: 50%;
+}
+
+.info {
+  padding-left: 10px;
+}
+
+.info .col {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 16px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.info .col .icono {
+  color: goldenrod;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.info .col p {
+  color: #999;
+}
+
+.info .redes-s {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info .redes-s a {
+  display: flex;
+  width: 40px;
+  height: 40px;
   background-color: goldenrod;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 7px;
+  color: #fff;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
-.form__title {
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-textarea {
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 100%;
-}
-
-.contacto__direccion {
-  font-size: 30px;
-  text-align: center;
-  color: white;
-}
-
-.btn-primary {
+.info .redes-s a:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
   background-color: black;
-  border-color: black;
 }
 
-.contenedor {
-  display: inline-block;
+.formulario {
+  padding-left: 10px;
+}
+
+.formulario__item {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  border: 1px solid #999;
+  font-weight: 400;
+  outline: 0;
+}
+
+.formulario__item--textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 200px;
+  max-height: 250px;
+}
+
+.formulario__item:focus {
+  border: 2px solid goldenrod;
+}
+
+.formulario__enviar {
+  background-color: goldenrod;
+  width: 100%;
+  padding: 12px 30px;
+  border: transparent;
+  cursor: pointer;
 }
 
 /* BOTON DE WHATSAPP*/
@@ -402,33 +453,6 @@ textarea {
 
 /*Medias Querys*/
 @media screen and (max-width: 599px) {
-  .nav {
-    display: none;
-    position: fixed;
-    z-index: 100000;
-    top: 0;
-    left: 0;
-    background-color: #545454;
-    width: 80%;
-    height: 50vh;
-  }
-  .nav__lista {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
-    gap: 1rem;
-    color: white;
-  }
-  .header__icono {
-    display: block;
-  }
-  .nav:target {
-    display: block;
-  }
-  .nav__item--oculto {
-    display: block;
-  }
   /* Pagina Pricipal*/
   .contenedor {
     text-align: start;
@@ -439,55 +463,15 @@ textarea {
     font-size: 2rem;
     padding-top: 20px;
   }
-  /* Sobre mi */
-  .inicio3 {
-    flex-direction: column;
-  }
-  .inicio3__izq {
-    width: 100%;
-  }
-  .inicio3__der {
-    width: 100%;
-  }
-  .inicio3__titulo {
-    font-size: 30px;
-  }
-  .inicio3__parrafo {
-    font-size: 15px;
-  }
-  .inicio4 {
-    flex-direction: column;
-  }
-  .inicio4__izq {
-    width: 100%;
-  }
-  .inicio4__der {
-    width: 100%;
-  }
-  .inicio4__titulo {
-    font-size: 30px;
-  }
-  .inicio4__parrafo {
-    font-size: 15px;
-  }
   /*Galeria Diseños*/
   .galeria-contenedor {
     grid-template-columns: 1fr;
     grid-auto-rows: 200px;
   }
   /* Servicios */
-  .servicios {
-    display: flex;
-    flex-direction: column;
-  }
   /* Contacto */
-  .form {
-    width: 100%;
-  }
-  .contacto__iframe {
-    width: 300px;
-    height: 250px;
-    padding: 20px;
+  .contenido {
+    flex-direction: column;
   }
   .servicios__titulo {
     font-size: 20px;

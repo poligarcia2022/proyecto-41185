@@ -2,40 +2,6 @@
 
 
 @media screen and (max-width:599px){
-    .nav{
-        display: none;
-        position: fixed;
-        z-index: 100000;
-        top: 0;
-        left: 0;
-        background-color:rgb(84, 84, 84);
-        width: 80%;
-        height: 50vh;
-        
-        
-    }
-    .nav__lista{
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        height: 100%;
-        gap: 1rem;
-        color: white;
-
-    }
-    .header__icono{
-        display: block;
-    }
-    .nav:target{
-        display: block;
-
-    }
-    .nav__item--oculto{
-        display: block;
-    }
-
-
-
 
     /* Pagina Pricipal*/
 .contenedor{
@@ -52,44 +18,6 @@
 
 
 
-
-/* Sobre mi */
-.inicio3{
-    flex-direction: column;
-}
-.inicio3__izq{
-    width: 100%;
-
-}
-.inicio3__der{
-    width: 100%;
-}
-.inicio3__titulo{
-    font-size: 30px;
-}
-.inicio3__parrafo{
-    font-size: 15px;
-}
-
-.inicio4{
-    flex-direction: column;
-}
-.inicio4__izq{
-    width: 100%;
-
-}
-.inicio4__der{
-    width: 100%;
-}
-.inicio4__titulo{
-    font-size: 30px;
-}
-.inicio4__parrafo{
-    font-size: 15px;
-}
-
-
-
 /*Galeria Diseños*/
 .galeria-contenedor{
     grid-template-columns: 1fr;
@@ -97,29 +25,15 @@
 
 }
 
-
-
-
-
 /* Servicios */
 
-.servicios{
-    display: flex;
+/* Contacto */
+.contenido{
+    
     flex-direction: column;
 }
 
 
-
-/* Contacto */
-.form{
-    width: 100%;
-}
-.contacto__iframe{
-    width:300px ;
-    height: 250px;
-    padding: 20px;
-    
-}
 .servicios__titulo{
     font-size: 20px;
     text-align: center;
