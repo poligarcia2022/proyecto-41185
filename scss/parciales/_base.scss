@@ -9,9 +9,13 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: $colorFondo;
    
     
 }
 .main{
     margin-top: 50px;
     min-height: 100vh;}
+.colorbarra{
+    background-color: $colorPrincipal;
+}

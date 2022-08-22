@@ -2,19 +2,19 @@
 .inicio{
     height: 100vh;
     max-width: 100%;
-    background-image: url(../imagenes/tostadora.jpg);
+    background-color:$colorFondo;
     background-size: cover;
     
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: repeat(10,1fr);
     
     font-family: 'Montserrat', sans-serif;
 
 
 }
 .contenedor{
-    grid-column: 3/10 ;
+    grid-column: 2/10 ;
     grid-row: 2/7;
     text-align: center;
 }
@@ -29,20 +29,28 @@
     font-size: 2rem;
     margin-top: 10px;
     font-family: 'Rubik Mono One', sans-serif;
+    color: $colorTexto;
+}
+.contenedor__h3{
+    font-size: 2rem;
+    margin-top: 10px;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: $colorPrincipal;
 }
 
 
 .contenedor__parrafo{
-    color: white;
+    color:$colorTexto;
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 20px;
 }
 .contenedor__boton{
+    background-color: $colorTexto;
     font-size: 1.5rem;
     padding: 10px 15px;
-    background:none;
+   
     color: white;
-    border: 1px solid $colorPrincipal;
+    border:$colorTexto 1px solid ;
     border-radius: 30px;
     margin-top: 10px;
 }

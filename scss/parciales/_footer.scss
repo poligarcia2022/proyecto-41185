@@ -1,7 +1,7 @@
 /* FOOTER */
 .footer{
-    background-color:black ;
-    color: white;
+    background-color:$colorPrincipal ;
+    color: $colorTexto;
     padding: 2rem 1rem;
 
     &__flex{
@@ -15,14 +15,14 @@
     flex-direction: row;
     list-style: none;
     justify-content: center;
-    border-top: 3px solid white;
+    border-top:$colorTexto 3px solid;
     padding: 1rem 0;
     gap: 1rem;
        
 }
 &__item{
    font-size: 2rem;
-   color: white;
+   color:$colorTexto;
 }
 &__titulo{
 font-size: 1rem;
